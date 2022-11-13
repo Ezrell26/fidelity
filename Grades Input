@@ -36,5 +36,10 @@ class grades{
                 System.out.println("OVERALL AVERAGES: " + Total_Grades);
             }
         } while (Output == 1);
-    }
+            
+                  System.out.println("GOOD JOB!:");
+
+  }
 }
+
+
