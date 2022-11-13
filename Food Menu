@@ -3,8 +3,6 @@
 * Section: IT FIDELITY
 * Year: 4TH Year
 */
-
-
 import java.util.Scanner;
 
 public class Main {
@@ -12,7 +10,6 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner console = new Scanner(System.in);
-
 
         int MyOrder;
         int Main_Dish;
@@ -22,12 +19,10 @@ public class Main {
         double price;
         double total = 0;
 
-
         System.out.println("DO YOU WANT TO ORDER? [1-YES, 2-NO]  ");
         System.out.print("Enter the number: ");
         MyOrder = console.nextInt();
         Scanner sc = new Scanner(System.in);
-
 
         do {
             if (MyOrder == 1) {
@@ -40,7 +35,6 @@ public class Main {
                 Main_Dish = sc.nextInt();
                 System.out.println("----------------------------");
 
-
                 System.out.println(" APPETIZERS ");
                 System.out.println("[1] - POACHED SHRIMP COCKTAIL = 399.00 ");
                 System.out.println("[2] - TRUFFLE SPINACH & ARTICHOKE DIP = 500.00");
@@ -48,7 +42,6 @@ public class Main {
                 System.out.print("Choose your order: ");
                 APPETIZERS = sc.nextInt();
                 System.out.println("----------------------------");
-
 
                 System.out.println("Beverages: ");
                 System.out.println("[1] - Red horse = 110.00");
@@ -59,51 +52,50 @@ public class Main {
                 Beverages = sc.nextInt();
                 System.out.println("----------------------------");
 
-
                 if (Main_Dish == 1) {
                     price = 391.00;
                     total = price + total;
-                    System.out.println(" You ordered: Butter Chicken" + " - " + price);
+                    System.out.println(" You ordered: Butter Chicken" + " = " + price);
                 } else if (Main_Dish == 2) {
                     price = 200.00;
                     total = price + total;
-                    System.out.println(" You ordered: Grilled Chicken with Fresh Cherry Salsa" + " - " + price);
+                    System.out.println(" You ordered: Grilled Chicken with Fresh Cherry Salsa" + " = " + price);
                 } else if (Main_Dish == 3) {
                     price = 250.00;
                     total = price + total;
-                    System.out.println(" You ordered: Ravioli" + " - " + price);
+                    System.out.println(" You ordered: Ravioli" + " = " + price);
                 }
 
                 if (APPETIZERS == 1) {
                     price = 399.00;
                     total = price + total;
-                    System.out.println(" You ordered: POACHED SHRIMP COCKTAIL " + " - " + price);
+                    System.out.println(" You ordered: POACHED SHRIMP COCKTAIL " + " = " + price);
                 } else if (APPETIZERS == 2) {
                     price = 500.00;
                     total = price + total;
-                    System.out.println(" You ordered: TRUFFLE SPINACH & ARTICHOKE DIP " + " - " + price);
+                    System.out.println(" You ordered: TRUFFLE SPINACH & ARTICHOKE DIP " + " = " + price);
                 } else if (APPETIZERS == 3) {
                     price = 550.00;
                     total = price + total;
-                    System.out.println(" You ordered: SHORT RIB KETTLE CHIP NACHOS " + " - " + price);
+                    System.out.println(" You ordered: SHORT RIB KETTLE CHIP NACHOS " + " = " + price);
                 }
 
                 if (Beverages == 1) {
                     price = 110.00;
                     total = price + total;
-                    System.out.println(" You ordered: Red horse" + " - " + price);
+                    System.out.println(" You ordered: Red horse" + " = " + price);
                 } else if (Beverages == 2) {
                     price = 50.00;
                     total = price + total;
-                    System.out.println(" You ordered: Coke" + " - " + price);
+                    System.out.println(" You ordered: Coke" + " = " + price);
                 } else if (Beverages == 3) {
                     price = 40.00;
                     total = price + total;
-                    System.out.println(" You ordered: Sprite" + " - " + price);
+                    System.out.println(" You ordered: Sprite" + " = " + price);
                 } else if (Beverages == 4) {
                     price = 45.00;
                     total = price + total;
-                    System.out.println(" You ordered: San Mig Light" + " - " + price);
+                    System.out.println(" You ordered: San Mig Light" + " = " + price);
                 }
 
                 System.out.println("Total Price: " + total);
@@ -111,9 +103,10 @@ public class Main {
                 output = sc.nextInt();
 
             }
-       
-       }while (output == 1) ;
+        }while (output == 1) ;
 
-                 System.out.println("THANK YOU FOR BUYING:");            
+                 System.out.println("THANK YOU FOR BUYING:");
+
     }
 }
+
