@@ -1,0 +1,112 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner console = new Scanner(System.in);
+
+
+        int MyOrder;
+        int Main_Dish;
+        int APPETIZERS;
+        int Beverages;
+        int output = 0;
+        double price;
+        double total = 0;
+
+
+
+        System.out.println("DO YOU WANT TO ORDER? [1-YES, 2-NO]  ");
+        System.out.print("Enter the number: ");
+        MyOrder = console.nextInt();
+        Scanner sc = new Scanner(System.in);
+
+
+        do {
+            if (MyOrder == 1) {
+                System.out.println("----------------------------");
+                System.out.println(" MAIN DISH: ");
+                System.out.println("[1] - Butter Chicken = 391.00 ");
+                System.out.println("[2] - Grilled Chicken with Fresh Cherry Salsa = 200.00");
+                System.out.println("[3] - Ravioli = 250.00");
+                System.out.print("Choose your order:");
+                Main_Dish = sc.nextInt();
+                System.out.println("----------------------------");
+
+
+                System.out.println(" APPETIZERS ");
+                System.out.println("[1] - POACHED SHRIMP COCKTAIL = 399.00 ");
+                System.out.println("[2] - TRUFFLE SPINACH & ARTICHOKE DIP = 500.00");
+                System.out.println("[3] - SHORT RIB KETTLE CHIP NACHOS = 550.00");
+                System.out.print("Choose your order: ");
+                APPETIZERS = sc.nextInt();
+                System.out.println("----------------------------");
+
+
+                System.out.println("Beverages: ");
+                System.out.println("[1] - Red horse = 110.00");
+                System.out.println("[2] - Coke = 50.00");
+                System.out.println("[3] - Sprite = 40.00");
+                System.out.println("[4] - San Mig Light = 45.00");
+                System.out.print("Choose your order: ");
+                Beverages = sc.nextInt();
+                System.out.println("----------------------------");
+
+
+                if (Main_Dish == 1) {
+                    price = 391.00;
+                    total = price + total;
+                    System.out.println(" You ordered: Butter Chicken" + " - " + price);
+                } else if (Main_Dish == 2) {
+                    price = 200.00;
+                    total = price + total;
+                    System.out.println(" You ordered: Grilled Chicken with Fresh Cherry Salsa" + " - " + price);
+                } else if (Main_Dish == 3) {
+                    price = 250.00;
+                    total = price + total;
+                    System.out.println(" You ordered: Ravioli" + " - " + price);
+                }
+
+                if (APPETIZERS == 1) {
+                    price = 399.00;
+                    total = price + total;
+                    System.out.println(" You ordered: POACHED SHRIMP COCKTAIL " + " - " + price);
+                } else if (APPETIZERS == 2) {
+                    price = 500.00;
+                    total = price + total;
+                    System.out.println(" You ordered: TRUFFLE SPINACH & ARTICHOKE DIP " + " - " + price);
+                } else if (APPETIZERS == 3) {
+                    price = 550.00;
+                    total = price + total;
+                    System.out.println(" You ordered: SHORT RIB KETTLE CHIP NACHOS " + " - " + price);
+                }
+
+                if (Beverages == 1) {
+                    price = 110.00;
+                    total = price + total;
+                    System.out.println(" You ordered: Red horse" + " - " + price);
+                } else if (Beverages == 2) {
+                    price = 50.00;
+                    total = price + total;
+                    System.out.println(" You ordered: Coke" + " - " + price);
+                } else if (Beverages == 3) {
+                    price = 40.00;
+                    total = price + total;
+                    System.out.println(" You ordered: Sprite" + " - " + price);
+                } else if (Beverages == 4) {
+                    price = 45.00;
+                    total = price + total;
+                    System.out.println(" You ordered: San Mig Light" + " - " + price);
+                }
+
+            }
+        } while (output == 1);
+
+                         System.out.println("Total Price: " + total);
+                         System.out.print("You want to order again: [1] - YES / [2] - NO: ");
+                         output = sc.nextInt();
+
+
+    }
+}
