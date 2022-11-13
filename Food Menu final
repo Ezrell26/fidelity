@@ -105,7 +105,7 @@ public class Main {
             }
         }while (output == 1) ;
 
-                 System.out.println("THANK YOU FOR BUYING:");
+                 System.out.println("THANK YOU FOR VISITING HAVE A NICE DAY:");
 
     }
 }
