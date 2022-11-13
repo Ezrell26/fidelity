@@ -16,7 +16,6 @@ public class Main {
         double total = 0;
 
 
-
         System.out.println("DO YOU WANT TO ORDER? [1-YES, 2-NO]  ");
         System.out.print("Enter the number: ");
         MyOrder = console.nextInt();
@@ -100,13 +99,14 @@ public class Main {
                     System.out.println(" You ordered: San Mig Light" + " - " + price);
                 }
 
+                System.out.println("Total Price: " + total);
+                System.out.print("You want to order again: [1] - YES / [2] - NO: ");
+                output = sc.nextInt();
+
             }
-        } while (output == 1);
+       
+       }while (output == 1) ;
 
-                         System.out.println("Total Price: " + total);
-                         System.out.print("You want to order again: [1] - YES / [2] - NO: ");
-                         output = sc.nextInt();
-
-
+                 System.out.println("THANK YOU FOR BUYING:");            
     }
 }
