@@ -4,36 +4,36 @@
 * Year: 4TH Year
 */
 
+
 import java.util.Scanner;
 class grades{
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String input;
-        int Score;
-        int Subject_Grade = 0;
-        int Output;
-        int TotalScore = 0;
+        String input; 
+        int Score, Subject_Grades = 0;
+        int Output, TotalScore = 0;
 
         do {
-            System.out.println("ARE YOU SURE TO INPUT A GRADE? ");
+            System.out.println("ARE YOU SURE TO INPUT YOUR GRADES? ");
             System.out.print("[Yes] or [No]?:");
             input = sc.nextLine();
             Output = 0;
+
 
             if (input.equalsIgnoreCase("yes")) {
                 Output += 1;
                 System.out.println("ENTER GRADES: ");
                 Score = sc.nextInt();
                 sc.nextLine();
-                Subject_Grade+= Score;
+                Subject_Grades+= Score;
                 TotalScore += 1;
 
             } else if (input.equalsIgnoreCase("no")) {
-                int Total_Averages_Grades = Subject_Grade / TotalScore;
+                int Total_Grades = Subject_Grades / TotalScore;
                 Output += 0;
-                System.out.println("OVERALL AVERAGES: " + Total_Averages_Grades);
+                System.out.println("OVERALL AVERAGES: " + Total_Grades);
             }
         } while (Output == 1);
     }
